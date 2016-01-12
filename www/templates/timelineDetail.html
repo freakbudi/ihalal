@@ -1,0 +1,25 @@
+<ion-header-bar class="bar-positive">
+        <button class="button button-icon icon ion-android-close" ng-click="back();"></button>
+
+
+        <!-- <a class="button button-large " href="#/tab/postingan">POST</a> -->
+        <button class="button button-large button-clear button-light">
+          POST
+        </button>
+</ion-header-bar>
+<ion-view >
+
+  <ion-content class="padding">
+    <div class="list card" >
+      <div class="item item-body" >
+        <img class="full-image" src="{{baseImageUrl}}{{detailTimelines[0].gambar_content}}">
+        <p>
+          {{detailTimelines[0].deskripsi_content}}
+        </p>
+        <p>
+          <a href="#" class="subdued">{{baseImageUrl}}{{detailTimelines[0].gambar_content}}</a>
+          <a href="#" class="subdued">5 Comments</a>
+        </p>
+    </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,23 @@
+<ion-view view-title="dashboard">
+    <ion-content class="padding">
+      <div class="list">
+      <a class="item item-thumbnail-left" ng-repeat="x in timelineData" href="#/tab/timeline/{{x.id_content}}">
+        <img src="#">
+        <h2>{{x.judul_content}}</h2>
+        <p>{{x.deskripsi_content}}</p>
+      </a>
+    </div>
+
+      <!-- <div class="list" ng-repeat="x in timelineData" type="item-text-wrap" href="#/tab/timeline/{{x.id_content}}">
+        <div class="item item-divider">{{x.judul_content}}</div>
+        <div class="item item-image">
+          <img src="{{baseUrlImage + x.gambar_content}}">
+        </div>
+        <div class="item item-body">
+          <div>
+            {{x.deskripsi_content}}
+          </div>
+        </div>
+      </div> -->
+    </ion-content>
+</ion-view>

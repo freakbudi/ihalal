@@ -1,0 +1,46 @@
+<ion-header-bar class="bar-positive">
+        <h1 class="title">Friend List</h1>
+        <a class="button button-icon icon ion-compose" href="#/tab/postingan"></a>
+</ion-header-bar>
+<ion-view >
+  <!--<ion-content class="padding">
+    <div class="list">
+    <a class="item item-thumbnail-left" ng-repeat="x in timelineData" href="#/tab/timeline/{{x.id_content}}">
+      <img src="{{baseImageUrl}}{{x.gambar_content}}">
+      <h2>{{x.judul_content}}</h2>
+      <p>{{x.deskripsi_content}}</p>
+    </a>
+  </div> -->
+<ion-content padding="false" class="has-header">
+
+<div class="list card " ng-repeat="x in timelineData">
+<!-- <a ng-repeat="x in timelineData" href="#/tab/timeline/{{x.id_content}}"> -->
+    <a href="#/tab/timeline/{{x.id_content}}" style="text-decoration:none">
+    <div class="item item-avatar" >
+
+      <img src="{{baseImageUrl}}{{x.gambar_content}}">
+
+      <h2>Pretty Hate Machine</h2>
+      <p>Nine Inch Nails</p>
+    </div>
+  </a>
+    <div class="item item-image">
+      <img src="{{baseImageUrl}}{{x.gambar_content}}">
+    </div>
+
+<!-- </a> -->
+</div>
+
+    <!-- <div class="list" ng-repeat="x in timelineData" type="item-text-wrap" href="#/tab/timeline/{{x.id_content}}">
+      <div class="item item-divider">{{x.judul_content}}</div>
+      <div class="item item-image">
+        <img src="{{baseUrlImage + x.gambar_content}}">
+      </div>
+      <div class="item item-body">
+        <div>
+          {{x.deskripsi_content}}
+        </div>
+      </div>
+    </div> -->
+  </ion-content>
+</ion-view>
